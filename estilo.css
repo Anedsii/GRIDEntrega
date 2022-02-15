@@ -52,10 +52,10 @@ section {
     flex-direction: column;
     padding: 100px;
     align-items: center;
-    background: linear-gradient(#344E41, #e7ecee)
+    background: linear-gradient(#344E41, #e7ecee);
 }
 
-rgb(24, 32, 28) rgb(49, 71, 60) .title {
+.title {
     width: 100%;
     height: 100px;
 }
