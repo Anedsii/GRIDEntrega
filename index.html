@@ -1,137 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="estilo.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Parrot Loris</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilobts.css">
+    <title>Parrots Loris</title>
 </head>
 
 <body>
-    <header id="#id">
-        <div>
-            <p id="logo">
-                Parrots Lori's</p>
-        </div>
-    </header>
-    <nav class="header__nav">
-        <ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Parrots Loris</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active  blue" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active blue" href="#">Alimentacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active blue" href="./pages/Company.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active blue" href="#">Nosotros</a>
+                    </li>
 
-            <a href="#">
-                <li>Home</li>
-            </a>
-            <a href="pages/Products.html">
-                <li>Products</li>
-            </a>
-            <a href="pages/Company.html">
-                <li>Company</li>
-            </a>
-            <a href="pages/Blog.html">
-                <li>Blog</li>
-            </a>
-            <a href="pages/Food.html">
-                <li>Alimentacion</li>
-            </a>
-        </ul>
+                </ul>
+            </div>
+        </div>
     </nav>
     <section>
-        <div class="header__block">
-            <div class="header__block_1">
-                <img src="imagen/00.jpg"></div>
-            <div class="header__block_2">
-                <p>El mijo es un pequeño grano de semilla amarilla, que proporciona los nutrientes esenciales para mantener tu salud; lo puedes preparar de manera similar al arroz o la quinoa, cociéndolo a fuego lento, para permitir que se absorba todo el
-                    agua. El resultado es un plato muy nutritivo que se puede convertir en un excelente plato principal. Aportar mijo a tu dieta ayuda a crear variedad en la ingesta de nutrientes; es una buena fuente de vitaminas del complejo B, que ayudan
-                    en el metabolismo energético; así como la actividad enzimática, la regulación del sistema nervioso y la producción de glóbulos rojos.
-                </p>
-                <br>
-                <br>
-                <button>Continuar leyendo</button> </div>
-        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption d-none d-md-block top-50">
+                        <h1>Bienvenido a Parrots Lori's</h1>
+                    </div>
+                    <img src="./imagen/tres.jpg" class="d-block w-100 carusel-ancho" alt="...">
 
-        <div class="title">
-            <p>Productos más populares</p>
-        </div>
-
-        <div class="section__productos">
-            <div class="section__producto_art">Producto0
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagen/uno.jpg" class="d-block w-100  carusel-ancho" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagen/dos.jpg" class="d-block w-100  carusel-ancho" alt="...">
+                </div>
             </div>
-            <div class="section__producto_art">Producto1</div>
-            <div class="section__producto_art">Producto2</div>
-            <div class="section__producto_art">Producto3</div>
-
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="section__productos">
-            <div class="section__producto_ref">Descropcion de producto0
+    </section>
+
+    <section>
+        <div class="row">
+
+            <h2 class="tituloprod">Productos más populares</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4 margen ">
+            <div class="col ">
+                <div class="card ">
+                    <img src="./imagen/ju1.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Producto</h5>
+                        <p class="card-text ">Descripcion de producto</p>
+                    </div>
+                </div>
             </div>
-            <div class="section__producto_ref">Descripcion de producto1</div>
-            <div class="section__producto_ref">Descripcion de producto2</div>
-            <div class="section__producto_ref">Descripcion de producto3</div>
-
-
-        </div>
-        <button>ver más</button>
-        <br>
-
-
-        </div>
-        <hr>
-        <br>
-        <hr>
-        <div class="title">
-            <div class="slider">
-                <div class="caption">
-                    Alimentacion y todo lo que debes saber
-                    <div class="text-box">
-                        <div>cuidados</div>
-                        <div>sectores</div>
-                        <div>veterinarias</div>
+            <div class="col ">
+                <div class="card ">
+                    <img src="./imagen/ju2.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Producto</h5>
+                        <p class="card-text ">Descripcion de producto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card ">
+                    <img src="./imagen/ju3.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Producto</h5>
+                        <p class="card-text ">Descripcion de producto</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col ">
+                <div class="card ">
+                    <img src="./imagen/ju4.jpg " class="card-img-top " alt="... ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">Producto</h5>
+                        <p class="card-text ">Descripcion de producto</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="food ">
-
-
-            <div class="food_block1 ">
-
-                <p>Los loros, como la gran mayoría de animales e incluidos los humanos, necesitan una dieta variada para vivir saludablemente. Además de semillas como el girasol, el mijo, el alpiste, maíz y otras variedades, también deberemos incluir frutas
-                    y verduras en la alimentación habitual de nuestro loro, e incluso frutos secos.</p>
-
-
-
-
-
-                <button>ver más</button>
-            </div>
-            <div class="food_block2 ">imagen
-            </div>
-            <br>
-            <br>
-
-
-        </div>
     </section>
-    <footer>
-        <div>
-            <p>Ubicanos en...</p>
-        </div>
 
-
-        <div class="buscar ">
-
-            <div class="footer__contactos ">
-                <p>datos ubicacion</p>
-            </div>
-            <div class="footer_map "> <iframe id="Ubicanos " width=500px height=400px title="mapa " style="border:none " src="https://maps.google.com/maps?f=q&source=s_q&q=buenos+aires&sll=37.0625,-95.677068&sspn=38.638819,80.859375&t=h&hnear=Buenos+Aires,+Argentina&z=11&ll=-34.603723,-58.381593&output=embed ">
-        </iframe></div>
-        </div>
-
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
 </body>
 
 </html>
